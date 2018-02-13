@@ -1,0 +1,43 @@
+﻿<Page x:Class="My2Life___Modpack_Loader.About"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:My2Life___Modpack_Loader"
+      mc:Ignorable="d" 
+      d:DesignHeight="390" d:DesignWidth="730"
+      Title="Informationen">
+
+    <Grid x:Name="Main" Background="White" Width="730">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Informationen" HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" Grid.Row="1" FontSize="18" Height="34" Width="149"/>
+        <Label Content="Alle Informationen über den MySecondLife Modpack-Loader &quot;Launcher&quot;" HorizontalAlignment="Left" Margin="10,27,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Background="{x:Null}" Height="26">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="VersionLabel" Content="&#xf0c3; Aktuelle Version: " HorizontalAlignment="Left" Margin="10,58,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Background="{x:Null}" Height="26" Width="255" TextElement.FontFamily="pack://application:,,,/FontAwesome.WPF;component/#FontAwesome">
+            <Label.Foreground>
+                <SolidColorBrush Color="Black"/>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="VersionLabel_Copy" Content="&#xf121; Programmierung: time." HorizontalAlignment="Left" Margin="10,76,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Background="{x:Null}" Height="26" Width="255" TextElement.FontFamily="pack://application:,,,/FontAwesome.WPF;component/#FontAwesome" Foreground="Black"/>
+        <Label Content="Drittpakete" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Grid.Row="1" FontSize="18" Height="34" Width="149"/>
+        <Label Content="Informationen und Lizenzen" HorizontalAlignment="Left" Margin="10,137,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Background="{x:Null}" Height="26">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="FontAwesomeLicense" Content="FontAwesome.WPF" HorizontalAlignment="Left" Margin="10,161,0,0" Grid.RowSpan="2" VerticalAlignment="Top" FontWeight="Bold" MouseLeftButtonDown="FontAwesomeLicense_MouseLeftButtonDown"/>
+        <Label Content="WPF (+UWP) controls for the iconic font and CSS toolkit Font Awesome." HorizontalAlignment="Left" Margin="10,177,0,0" Grid.RowSpan="2" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.154"/>
+        <Label x:Name="NewtonsoftLicense" Content="Newtonsoft.Json" HorizontalAlignment="Left" Margin="10,201,0,0" Grid.RowSpan="2" VerticalAlignment="Top" FontWeight="Bold" MouseLeftButtonDown="NewtonsoftLicense_MouseLeftButtonDown"/>
+        <Label Content="Json.NET is a popular high-performance JSON framework for .NET" HorizontalAlignment="Left" Margin="10,217,0,0" Grid.RowSpan="2" VerticalAlignment="Top" RenderTransformOrigin="0.553,-0.154"/>
+    </Grid>
+</Page>

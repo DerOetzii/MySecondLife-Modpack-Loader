@@ -1,0 +1,14 @@
+﻿<Page x:Class="My2Life___Modpack_Loader.ConnectionCheck"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:My2Life___Modpack_Loader"
+      mc:Ignorable="d" 
+      d:DesignHeight="390" d:DesignWidth="730"
+      Title="ConnectionCheck">
+
+    <Grid x:Name="Main" Background="White" Height="390" Width="730">
+        <Label x:Name="CheckText" Content="Prüfe ob eine Internetverbindung besteht" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Page>
